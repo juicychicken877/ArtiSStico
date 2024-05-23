@@ -1,0 +1,85 @@
+:root {
+    --navHeight: 3.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: #eee;
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.main-header > img, .background, h1, p {
+    position: absolute;
+    width: 100%;
+}
+
+.main-header > p {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    padding-bottom: var(--navHeight);
+    bottom: 0;
+    left: 0;
+}
+
+
+.main-header > .background {
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    opacity: 0.5;
+}
+
+.main-header > h1 {
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: var(--navHeight);
+    text-align: center;
+    color: white;
+}
+
+body > section {
+    width: 100%;
+    padding: 2rem 4rem 2rem 4rem;
+    box-sizing: border-box;
+}
+
+body > section > h2 {
+    font-size: 32px;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: var(--navHeight);
+}
+
+.sponsors {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsors > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.sponsors > div > img {
+    width: 8rem;
+    height: 8rem;
+}

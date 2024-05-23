@@ -1,0 +1,65 @@
+footer {
+    color: white;
+    box-sizing: border-box;
+    margin-top: var(--navHeight);
+    background-color: #111;
+    height: 20rem;
+    padding: 2rem 4rem 2rem 4rem;
+    width: 100%;
+}
+
+footer > .links, .contact > h3 {
+    text-transform: uppercase;
+}
+
+footer > .links {
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+footer > .contact {
+    padding-left: 2rem;
+    box-sizing: border-box;
+    float: left;
+    border-left: 1px solid white;
+    width: 40%;
+    height: 100%;
+}
+
+footer > .links > ul {
+    padding-top: 2rem;
+    color: #999;
+}
+
+footer > .links > ul > li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+footer > .links > ul > li:hover {
+    color: #bbb;
+    cursor: pointer;
+}
+
+footer > .links > .socials {
+    padding-top: 2rem;
+}
+
+footer > .links > .socials > span {
+    display: block;
+    float: left;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+footer > .contact > ul {
+    padding-top: 2rem;
+    color: #999;
+}
+
+footer > .contact > ul > li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
