@@ -1,11 +1,103 @@
+@keyframes vertical-stretch {
+    from {
+        height: 0rem;
+    }
+    to {
+        height: var(--navHeight);
+    }
+}
+
+@keyframes vertical-back-stretch {
+    from {
+        height: var(--navHeight)
+    }
+    to {
+        height: 0rem;
+    }
+}
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    z-index: 10;
     height: var(--navHeight);
-    z-index: 1000;
-    background-color: aliceblue;
+    font-weight: 500;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#nav-background {
+    background-color: var(--secondaryColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--navHeight);
+    z-index: 9;
+    width: 100%;
+}
+
+#burger {
+    line-height: var(--navHeight);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    height: var(--navHeight);
+    transition: 0.2s color ease-in-out;
+    color: white;
+    font-size: 32px;
+    display: none;
+}
+
+#burger:hover {
+    color: var(--thirdColor);
+    cursor: pointer;
+}
+
+#burger > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    display:none;
+    flex-direction: column;
+    background-color: var(--secondaryColor);
+}
+
+#burger:hover > ul {
+    display: flex;
+}
+
+#burger > ul > a > li {
+    line-height: var(--navHeight);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#burger > ul > a > li:hover {
+    color: var(--thirdColor);
+}
+
+#burger-options {
+    display: none;
+}
+
+.stretch-animation {
+    animation-name: vertical-stretch;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+
+.back-stretch-animation {
+    animation-name: vertical-back-stretch;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
 }
 
 nav > ul {
@@ -14,21 +106,34 @@ nav > ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
     height: var(--navHeight);
 }
 
-nav > ul > li {
+nav > ul > a > li {
     line-height: var(--navHeight);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     text-align: center;
     height: var(--navHeight);
+    transition: 0.2s color ease-in-out;
 }
 
-nav > ul > li:hover {
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul > a > li:hover {
     cursor: pointer;
-    background-color: #eee;
+    color: var(--thirdColor);
+}
+
+nav > #logo {
+    width: 15%;
+    text-align: center;
+}
+
+nav > #user {
+    width: 15%;
+    text-align: center;
 }

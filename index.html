@@ -3,84 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!---->
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/18d3b8c21a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="fontello/css/fontello.css">
-    <title>Potyczki z grafiką</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>ArtiSStico</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>O konkursie</li>
-            <li>Wyniki konkursu</li>
-            <li>Regulamin</li>
-            <li>Kontakt</li>
-            <li>Zaloguj się</li>
-        </ul>
-    </nav>
+    <section id="czarodziej">
+        <div style="height: var(--navHeight)" id="start"></div>
+        <nav>
+            <section id="logo">
+                <img src="./images/logo.png">
+            </section>
+            <ul>
+                <a href="#start"><li>Start</li></a>
+                <a href="#zwyciezcy"><li>Zwycięzcy</li></a>
+                <a href="#regulamin"><li>Regulamin</li></a>
+                <a href="#kontakt"><li>Kontakt</li></a>
+                <a href="#zgloszenie"><li>Zgłoszenie</li></a>
+            </ul>
 
-    <div class="main-header">
-        <img src="images/header.png">
-        <div class="background"></div>
-        <h1>Potyczki z grafiką</h1>
-        <p>Na najlepszych czekają atrakcyjne nagrody oraz możliwość zaprezentowania swoich prac szerokiej publiczności. Dołącz do nas i pokaż swój talent!</p>
-    </div>
+            <section id="burger">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <a href="#start"><li>Start</li></a>
+                    <a href="#zwyciezcy"><li>Zwycięzcy</li></a>
+                    <a href="#regulamin"><li>Regulamin</li></a>
+                    <a href="#kontakt"><li>Kontakt</li></a>
+                    <a href="#zgloszenie"><li>Zgłoszenie</li></a>
+                </ul>
+            </section>
+        </nav>
 
-    <section class="about-us">
-        <h2>O konkursie</h2>
+        <div id="nav-background"></div>
+
+        <div id="background-image">
+            <div id="darkening"></div>
+        </div>
+
+        <section id="landing-header">
+            <h1>Konkurs Artystyczny</h1>
+            <p>
+                Konkurs Artystyczny, który jest otwarty dla wszystkich pasjonatów grafiki. Celem konkursu jest promowanie kreatywności, innowacyjności i wyjątkowych talentów w dziedzinie grafiki komputerowej oraz tradycyjnej.
+            </p>
+
+            <a href="#zgloszenie"><button class="main-button box-shadow">Zgłoś się</button></a>
+        </section>
+    </section>
+
+    <h1 class="main-header">Od czego zacząć?</h1>
+
+    <section id="tutorial">
         <div>
-
+            <i class="fa-solid fa-palette"></i>
+            <h3>Stwórz</h3>
+            <p>Daj się ponieść swojej kreatywności</p>
+        </div>
+        <div class="with-button">
+            <i class="fa-solid fa-upload"></i>
+            <h3>Zgłoś</h3>
+            <p>Zaprezentuj swoją pracę innym</p>
+            <a href="#zgloszenie"><button class="main-button">Zgłoś Pracę</button></a>
+        </div>
+        <div class="with-button">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>Wygrywaj</h3>
+            <p>Wygrywaj atrakcyjne nagrody i ciesz się zwycięstwem</p>
+            <a href="#nagrody"><button class="main-button">Nagrody</button></a>
         </div>
     </section>
 
-    <section class="winners">
-        <h2>Zwycięzcy</h2>
-        <div>
-            
+    <h1 class="main-header" id="zwyciezcy">Zwycięzcy poprzednich edycji</h1>
+
+    <section class="big-image" 
+        style="background: url('../images/dolina_gasienicowa.png');
+            background-position-y: 55%;
+            background-position-x: 60%;
+        "
+    >
+        <div class="image-darkening"></div>
+        <div class="description">
+            <p class="title">"W Dolinie Chochołowskiej"</p>
+            <p class="author">Patrycja Łużycka</p>
+            <p class="description-description">Zwycięzca edycji 2023 Konkursu Artystycznego</p>
         </div>
     </section>
 
-    <section class="sponsors">
-        <h2>Sponsorzy</h2>
-        <div>
-            <img src="images/walter_white.png">
-            <img src="images/walter_white.png">
-            <img src="images/walter_white.png">
-            <img src="images/walter_white.png">
-            <img src="images/walter_white.png">
-            <img src="images/walter_white.png">
+    <section class="big-image" 
+        style="background: url('../images/morskie_oko.png');
+        "
+        >
+            <div class="image-darkening"></div>
+            <div class="description">
+                <p class="title">"Nad Morskim Okiem"</p>
+                <p class="author">Mirosław Czeczeman</p>
+                <p class="description-description">Zwycięzca edycji 2022 Konkursu Artystycznego</p>
+            </div>
+    </section>
+
+    <section class="big-image" 
+        style="background: url('../images/puszcza_bialowieska.jpg');
+        "
+        >
+        <div class="image-darkening"></div>
+        <div class="description">
+            <p class="title">"Puszcza Białowieska"</p>
+            <p class="author">Roman Baran</p>
+            <p class="description-description">Zwycięzca edycji 2021 Konkursu Artystycznego</p>
         </div>
+    </section>
+
+    <section id="nagrody-section">
+        <h1 class="main-header" id="nagrody">
+            Dla Zwycięzcy Konkursu Artystycznego 2024 czeka nagroda w postaci<br /> <img src="images/bitcoin.png"> <span style="color: goldenrod">1 Bitcoina</span>
+            czyli <span id="bitcoin-price"></span>
+        </h1>
+    </section>
+
+    <h1 class="main-header" id="zgloszenie">Formularz Zgłoszeniowy</h1>
+
+    <section id="zgloszenie-section">
+        <form>
+            <div>
+                <input type="text" placeholder="Imię" onfocus="this.placeholder=''" onblur="this.placeholder='Imię'" required>
+                <input type="text" placeholder="Nazwisko" onfocus="this.placeholder=''" onblur="this.placeholder='Nazwisko'" required>
+                <input type="number" placeholder="Wiek" onfocus="this.placeholder=''" onblur="this.placeholder='Wiek'" required>
+                <input type="email" placeholder="E-mail" onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Miasto" onfocus="this.placeholder=''" onblur="this.placeholder='Miasto'" required>
+                <input type="tel" placeholder="Telefon" onfocus="this.placeholder=''" onblur="this.placeholder='Telefon'" required>
+                <select required>
+                    <option value="">Wykształcenie</option>
+                    <option>Podstawowe</option>
+                    <option>Średnie</option>
+                    <option>Wyższe</option>
+                </select>
+                <button class="main-button">Zgłoś pracę</button>
+            </div>
+        </form>
+    </section>
+
+    <h1 class="main-header" id="regulamin">Regulamin</h1>
+
+    <section id="regulamin-section"> 
+        <embed src="https://mikroporady.pl/files/regulaminy/regulamin-serwisu.pdf" type="application/pdf">
+        <a href="regulamin-serwisu.pdf"><button class="main-button">Regulamin PDF</button></a>
     </section>
 
     <footer>
         <section class="links">
             <h3>Odnośniki</h3>
             <ul>
-                <li>Regulamin Konkursu</li>
-                <li>Kontakt</li>
-                <li>O konkursie</li>
+                <li>Regulamin konkursu</li>
+                <li>Pierwsze kroki</li>
+                <li>Nagrody do wygrania</li>
                 <li>Zwycięzcy poprzedniej edycji</li>
+                <li>Zgłoszenie swojej pracy</li>
             </ul>
             <div class="socials">
-                <span class="icon-instagram"></span>
-                <span class="icon-twitter-squared"></span>
-                <span class="icon-facebook-squared"></span>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
             </div>
+            <div style="clear: both"></div>
+            <img src="./images/logo.png">
         </section>
         <section class="contact">
-            <h3>Kontakt</h3>
+            <h3 id="kontakt">Kontakt</h3>
             <ul>
-                <li><span class="icon-location"></span> Radom, ul. Zamachowa 9/11</li>
-                <li><span class="icon-phone"></span> +48 513 748 192</li>
-                <li><span class="icon-mail"></span> potyczkizgrafika@gmail.com</li>
+                <li><i class="fa-solid fa-location-dot"></i> Radom, ul. Zamachowa 9/11</li>
+                <li><i class="fa-solid fa-phone"></i> +48 513 748 192</li>
+                <li><i class="fa-solid fa-at"></i> potyczkizgrafika@gmail.com</li>
             </ul>
         </section>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

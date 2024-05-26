@@ -1,0 +1,29 @@
+@media screen and (max-width: 1000px){
+    #tutorial {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    #zgloszenie-section {
+        height: 40rem;
+        width: 40rem;
+    }
+    #zgloszenie-section > form > div {
+        clear: both;
+        width: 100%;
+        height: 20rem;
+    }
+    #regulamin-section > embed {
+        display: none;
+    }
+    #regulamin-section > a {
+        display: block;
+    }
+
+    /* Navigation */
+    nav > ul {
+        display: none;
+    }
+    #burger {
+        display: block;
+    }
+}

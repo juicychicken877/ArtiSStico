@@ -3,7 +3,8 @@ footer {
     box-sizing: border-box;
     margin-top: var(--navHeight);
     background-color: #111;
-    height: 20rem;
+    height: 25rem;
+    margin-top: 10rem;
     padding: 2rem 4rem 2rem 4rem;
     width: 100%;
 }
@@ -45,12 +46,14 @@ footer > .links > ul > li:hover {
 
 footer > .links > .socials {
     padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
-footer > .links > .socials > span {
+footer > .links > .socials > i {
     display: block;
     float: left;
-    font-size: 28px;
+    padding-right: 1rem;
+    font-size: 32px;
     cursor: pointer;
 }
 
